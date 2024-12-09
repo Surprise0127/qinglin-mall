@@ -9,11 +9,14 @@
     <description>qinglin-mall</description>
     <packaging>pom</packaging>
     <modules>
+        <module>qinglin-mall-common</module>
         <module>qinglin-mall-coupon</module>
         <module>qinglin-mall-member</module>
         <module>qinglin-mall-order</module>
         <module>qinglin-mall-product</module>
         <module>qinglin-mall-ware</module>
+        <module>renren-fast</module>
+        <module>renren-generator</module>
     </modules>
 
 </project>
