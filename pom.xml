@@ -15,8 +15,8 @@
         <module>qinglin-mall-order</module>
         <module>qinglin-mall-product</module>
         <module>qinglin-mall-ware</module>
-        <module>renren-fast</module>
-        <module>renren-generator</module>
+<!--        <module>renren-fast</module>-->
+<!--        <module>renren-generator</module>-->
     </modules>
 
 </project>
