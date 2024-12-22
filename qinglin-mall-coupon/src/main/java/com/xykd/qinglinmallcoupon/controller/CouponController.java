@@ -31,6 +31,15 @@ public class CouponController {
     private CouponService couponService;
 
     /**
+     * OpenFeign服务调用测试用例
+     * @return
+     */
+    @RequestMapping("/test")
+    private R test(){
+        return R.ok("调用成功001");
+    }
+
+    /**
      * 列表
      */
     @RequestMapping("/list")

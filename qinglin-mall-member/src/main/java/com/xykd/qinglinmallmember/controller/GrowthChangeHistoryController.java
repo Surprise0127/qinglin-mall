@@ -3,6 +3,7 @@ package com.xykd.qinglinmallmember.controller;
 import java.util.Arrays;
 import java.util.Map;
 
+import com.xykd.qinglinmallmember.feign.CouponFeignService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -15,6 +16,7 @@ import com.xykd.qinglinmallmember.service.GrowthChangeHistoryService;
 import com.common.utils.PageUtils;
 import com.common.utils.R;
 
+import javax.annotation.Resource;
 
 
 /**
@@ -29,6 +31,18 @@ import com.common.utils.R;
 public class GrowthChangeHistoryController {
     @Autowired
     private GrowthChangeHistoryService growthChangeHistoryService;
+
+    @Resource
+    CouponFeignService couponFeignService;
+
+    /**
+     * 测试
+     * @return R
+     */
+    @RequestMapping("/openfeigntest")
+    public R openFeignTest(){
+        return R.ok(couponFeignService.test());
+    }
 
     /**
      * 列表

@@ -1,8 +1,11 @@
+server:
+  port: 8050
+
 spring:
   datasource:
     username: root
     password: 123123
-    url: jdbc:mysql://localhost:3306/qinglin_mall_ums?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://localhost:3306/qinglin_mall_wms?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
   cloud:
     nacos:
@@ -12,7 +15,7 @@ spring:
         password: nacos
 
   application:
-    name: qinglin-mall-member
+    name: qinglin-mall-ware
 
 mybatis-plus:
   mapper-locations: classpath:/mapper/**/*.xml
