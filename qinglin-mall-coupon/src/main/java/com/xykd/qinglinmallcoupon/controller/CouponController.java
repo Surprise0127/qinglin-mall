@@ -32,7 +32,7 @@ public class CouponController {
 
     /**
      * OpenFeign服务调用测试用例
-     * @return
+     * @return R
      */
     @RequestMapping("/test")
     private R test(){
