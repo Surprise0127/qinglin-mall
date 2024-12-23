@@ -1,2 +1,2 @@
 # qinglin-mall
-柒零购物平台
+氢LIN购物平台
